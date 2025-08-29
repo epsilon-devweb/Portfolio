@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import data from '../../data/projects.json';
 import Error from '../Error/Error';
+import './_projectDetails.scss';
 
 export default function Projects() {
     const { projectId } = useParams();

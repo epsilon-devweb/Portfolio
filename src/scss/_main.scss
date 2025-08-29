@@ -11,7 +11,7 @@
 body {
     color: #fff;
     background: $bg-secondary;
-    font-family: 'Consolas';
+    font-family: 'Montserrat', sans-serif;
 }
 
 main {
@@ -23,7 +23,7 @@ main {
 
     section {
         gap: 6rem;
-        padding-inline: 6rem;
+        padding-inline: 4rem;
 
         @include tablet {
             gap: 3rem;
@@ -32,7 +32,7 @@ main {
 
         @include mobile {
             gap: 1.5rem;
-            padding-inline: 1.5rem;
+            padding-inline: 2rem;
         }
     }
 }
@@ -42,6 +42,11 @@ main {
     max-width: 1200px;
     height: 100%;
     margin-inline: auto;
+
+    @include mobile {
+        padding-inline: 1rem;
+        padding-block: 3rem;
+    }
 }
 
 h1 {
@@ -61,10 +66,10 @@ h2 {
 }
 
 h3 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 
     @include tablet {
-        font-size: 1.1rem;
+        font-size: 1.25rem;
     }
 }
 

@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router';
-
-import './scss/styles.scss';
+import '../src/scss/_main.scss';
 
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';

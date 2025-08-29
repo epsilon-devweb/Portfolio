@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../imgs/logo.png';
+import './_header.scss';
 
 export default function Header() {
     const [isActive, setIsActive] = useState(false);

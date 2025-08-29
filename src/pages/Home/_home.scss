@@ -16,7 +16,7 @@
         gap: 1rem;
 
         h1 {
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
 
         .description {
@@ -24,10 +24,10 @@
             flex-direction: column;
             align-items: start;
             gap: 1rem;
-            padding-inline: 1.5rem;
 
             p {
                 font-size: 1.2rem;
+                text-align: justify;
             }
 
             .skills {
@@ -45,28 +45,36 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    row-gap: 1rem;
 
     .context {
         display: flex;
         flex-wrap: wrap;
         gap: 2rem;
         width: 100%;
-        padding-inline: 1.5rem;
 
-        @include tablet {
-            justify-content: center;
+        // Style pour les cartes de projet
+        .project:not(.see-more) {
+            width: calc(50% - 1rem); // 2 projets par ligne
         }
 
-        .project {
-            width: calc(50% - 1rem);
+        // Style pour le lien "Voir +"
+        .see-more {
+            width: 100%;
+            text-align: center;
+            margin-top: 1rem;
+        }
 
-            @include tablet {
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+
+            .project:not(.see-more) {
+                width: 100%;
+            }
+
+            .see-more {
                 width: 90%;
-
-                &:not(:first-child):not(:last-child) {
-                    display: none;
-                }
+                margin: 0 auto;
             }
         }
     }
